@@ -48,7 +48,7 @@ else:
 # An IPv4 address is composed of 4 numbers between 0 and 255 separated by '.'
 # Write a script to verify that a string entered is that of an IPv4 address.
 ip = input("Enter your IP address :")
-pattern = r'^(\d{1,3}\.){3}\d{1,3}$'
+pattern = r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$'
 result = re.match(pattern, ip)
 if result is None:
     print("Not valid")
